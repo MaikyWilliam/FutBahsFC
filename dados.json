@@ -1,0 +1,258 @@
+{
+  "administradores": [
+    {
+      "usuario": "admin",
+      "senhaHash": "0dd376c5d4d9bea628b3c3c6fa1700a9bd84884052f23c7ad09d5662676b128c"
+    }
+  ],
+  "proximoJogo": {
+    "data": "Sábado, 21/06/2025 - 10:00h",
+    "local": "Futhaus 7, Estância Velha",
+    "expectativa": "O clássico que para a cidade! A briga pela liderança do ranking esquenta o final de semana."
+  },
+  "timesSorteados": {
+    "azul": [],
+    "vermelho": []
+  },
+  "financeiro": {
+    "saldoAtual": 150.75,
+    "valorMensalidade": 50.00,
+    "historicoTransacoes": [
+      { "id": 1, "data": "2025-06-01", "descricao": "Pagamento da mensalidade de Jonas Bueno", "tipo": "entrada", "valor": 50 },
+      { "id": 2, "data": "2025-06-05", "descricao": "Aluguel da quadra", "tipo": "saida", "valor": 120 }
+    ],
+    "statusMensalidades": {
+      "1": "2025-06-01"
+    }
+  },
+  "jogadores": [
+    {
+      "id": 7,
+      "nome": "Adriano",
+      "posicao": "Meia",
+      "pontos": 21,
+      "gols": 5,
+      "assistencias": 11,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 6
+    },
+    {
+      "id": 8,
+      "nome": "Daniel da Silva",
+      "posicao": "Goleiro",
+      "pontos": 13,
+      "gols": 0,
+      "assistencias": 0,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 9
+    },
+    {
+      "id": 9,
+      "nome": "Gladimir",
+      "posicao": "Zagueiro",
+      "pontos": 7,
+      "gols": 2,
+      "assistencias": 2,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 6
+    },
+    {
+      "id": 10,
+      "nome": "Guilherme",
+      "posicao": "Atacante",
+      "pontos": 25,
+      "gols": 23,
+      "assistencias": 12,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 5
+    },
+    {
+      "id": 1,
+      "nome": "Jonas Bueno",
+      "posicao": "Meia",
+      "numero": 10,
+      "pontos": 38,
+      "gols": 23,
+      "assistencias": 21,
+      "foto": "jonas_bueno.jpeg",
+      "titulos": 3,
+      "nota": 9
+    },
+    {
+      "id": 11,
+      "nome": "Juninho",
+      "posicao": "Atacante",
+      "pontos": 28,
+      "gols": 27,
+      "assistencias": 12,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 7
+    },
+    {
+      "id": 12,
+      "nome": "Lucão",
+      "posicao": "Atacante",
+      "pontos": 10,
+      "gols": 23,
+      "assistencias": 14,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 8
+    },
+    {
+      "id": 6,
+      "nome": "Lucas Dieckel",
+      "posicao": "Zagueiro",
+      "pontos": 5,
+      "gols": 3,
+      "assistencias": 1,
+      "numero": 0,
+      "foto": "lucas_dieckel.jpeg",
+      "titulos": 0,
+      "nota": 7
+    },
+    {
+      "id": 4,
+      "nome": "Luiz Carlos",
+      "posicao": "Atacante",
+      "pontos": 22,
+      "gols": 5,
+      "assistencias": 5,
+      "numero": 0,
+      "foto": "luiz_carlos.jpeg",
+      "titulos": 0,
+      "nota": 6
+    },
+    {
+      "id": 2,
+      "nome": "Maiky William",
+      "posicao": "Zagueiro",
+      "pontos": 14,
+      "numero": 29,
+      "gols": 1,
+      "assistencias": 3,
+      "foto": "maiky_william.jpeg",
+      "titulos": 2,
+      "nota": 8
+    },
+    {
+      "id": 13,
+      "nome": "Mauricio Lima",
+      "posicao": "Atacante",
+      "pontos": 1,
+      "gols": 2,
+      "assistencias": 2,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 5
+    },
+    {
+      "id": 14,
+      "nome": "Patrick Silveira",
+      "posicao": "Atacante",
+      "pontos": 18,
+      "gols": 32,
+      "assistencias": 8,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 8
+    },
+    {
+      "id": 15,
+      "nome": "Piu Piu",
+      "posicao": "Goleiro",
+      "pontos": 21,
+      "gols": 0,
+      "assistencias": 0,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 8
+    },
+    {
+      "id": 16,
+      "nome": "Rafael",
+      "posicao": "Volante",
+      "pontos": 16,
+      "gols": 7,
+      "assistencias": 9,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 7
+    },
+    {
+      "id": 3,
+      "nome": "Renato Goldani",
+      "posicao": "Meia",
+      "pontos": 29,
+      "gols": 10,
+      "assistencias": 3,
+      "numero": 0,
+      "foto": "renato_goldani.jpg",
+      "titulos": 0,
+      "nota": 7
+    },
+    {
+      "id": 5,
+      "nome": "Wagner Cavalheiro",
+      "posicao": "Volante",
+      "pontos": 3,
+      "gols": 6,
+      "assistencias": 1,
+      "numero": 0,
+      "foto": "wagner_cavalheiro.jpg",
+      "titulos": 0,
+      "nota": 7
+    },
+    {
+      "id": 18,
+      "nome": "William Dorneles",
+      "posicao": "Volante",
+      "pontos": 9,
+      "gols": 1,
+      "assistencias": 0,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 8
+    },
+    {
+      "id": 17,
+      "nome": "Zavalha",
+      "posicao": "Zagueiro",
+      "pontos": 28,
+      "gols": 4,
+      "assistencias": 2,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 8
+    }
+  ],
+  "jogos": [
+    {
+      "id": 5,
+      "data": "14/06/2025",
+      "titulo": "Vitória Azul Dominante: Time Azul Goleia o Time Vermelho por 3 a 0!",
+      "placar": "3 x 0",
+      "descricao": "<p>Em uma partida emocionante realizada no dia 14 de junho às 10h, o <strong>Time Azul</strong> mostrou sua força e venceu o <strong>Time Vermelho</strong> por 3 a 0, em um confronto que agitou o cenário futebolístico. O placar elástico reflete o domínio azul em campo, com destaque para atuações individuais brilhantes.</p><p>O jogo começou com o Time Vermelho buscando o ataque, mas logo se deparou com um dia inspirado do goleiro <strong>Jonas</strong>. O camisa 1 do Time Azul fez uma defesa <strong>difícil</strong> em um chute perigoso de Juninho, demonstrando reflexos apurados. Pouco depois, novamente Juninho tentou balançar as redes, mas Jonas estava lá para mais uma <strong>defesa espetacular</strong>, garantindo a segurança da meta azul.</p><p>O meio-campo do Time Azul também brilhou, com destaque para o incansável <strong>Zavalha</strong>, que realizou um <strong>desarme crucial</strong>, frustrando uma investida perigosa do adversário e mostrando a solidez defensiva da equipe.</p><p>A superioridade do Time Azul se transformou em gols na segunda etapa. O placar foi aberto por <strong>Ramires</strong>, que com um belo chute, fez a festa da torcida azul. A vantagem foi ampliada por <strong>Guilherme</strong>, que marcou seu primeiro gol na partida após um excelente passe de <strong>Gladimir</strong>. E não demorou muito para Guilherme balançar as redes novamente, desta vez com uma assistência precisa de <strong>Patrick</strong>, sacramentando a goleada de 3 a 0.</p><h3>Destaques da Partida e Votação Popular</h3><p>A atuação dos jogadores do Time Azul não passou despercebida pelos torcedores. Na votação popular realizada ao final do jogo, o goleiro <strong>Jonas</strong> foi eleito o grande destaque, com uma impressionante nota de <strong>9,40</strong>, coroando sua atuação impecável. <strong>Patrick</strong>, com suas assistências e movimentação inteligente, garantiu a segunda posição com <strong>8,38</strong>. Fechando o top 3, o incansável <strong>Zavalha</strong> foi reconhecido por sua garra e desarmes, alcançando a nota de <strong>7,78</strong>.</p><p>A vitória por 3 a 0 demonstra a força e o entrosamento do Time Azul, que segue firme em sua jornada no campeonato. A torcida já aguarda ansiosamente pelos próximos desafios!</p>",
+      "imagem_destaque": "foto2.jpeg",
+      "midias": [],
+      "temaVencedor": "azul"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+body {
+    background-color: #f4f4f4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.secao-admin {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+label,
+legend {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.player-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    align-items: end;
+}
+
+.player-form button {
+    grid-column: 1 / -1;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-admin {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-admin:hover {
+    background-color: #0056b3;
+}
+
+#player-management-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+    justify-content: start;
+}
+
+.player-list-item {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+}
+
+.btn-small {
+    width: auto;
+    padding: 5px 12px;
+    font-size: 14px;
+    margin-left: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-editar {
+    background-color: #17a2b8;
+}
+
+.btn-remover {
+    background-color: #dc3545;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close-modal {
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.montagem-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.drag-drop-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.time-box,
+.drop-zone {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+.drop-zone {
+    border-style: dashed;
+}
+
+.time-box h4,
+.drop-zone h4 {
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+#azul-list-drag,
+#sorteio-azul-list {
+    background-color: #f0f4ff;
+    border-color: #b3c7ff;
+}
+
+#vermelho-list-drag,
+#sorteio-vermelho-list {
+    background-color: #fff0f0;
+    border-color: #ffb3b3;
+}
+
+.player-item-sorteado {
+    padding: 8px;
+    border-bottom: 1px dotted #eee;
+    font-size: 0.9rem;
+}
+
+.player-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+}
+
+.stats-table td {
+    padding: 5px;
+}
+
+.stats-table input {
+    width: 60px;
+    text-align: center;
+}
+
+#image-preview {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.preview-image-container {
+    position: relative;
+}
+
+.preview-image-container img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.preview-image-container input[type="radio"] {
+    width: auto;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* --- ESTILOS PARA A LISTA DE PRESENÇA DO SORTEIO --- */
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.player-grid label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 0;
+}
+
+.player-grid label:hover {
+    background-color: #f0f8ff;
+}
+
+.player-grid input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* --- ESTILOS PARA O NOVO CARD DE JOGADOR --- */
+.player-list-item {
+    align-items: center; /* Mantém o alinhamento vertical dos botões */
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column; /* Coloca nome e detalhes um sobre o outro */
+    align-items: flex-start; /* Alinha o texto à esquerda */
+}
+
+.player-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.player-details {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* --- ESTILOS PARA O SISTEMA DE ABAS --- */
+.admin-tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin: 0 5px -2px 0;
+    transition: all 0.2s ease-in-out;
+}
+.tab-btn:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.tab-btn.active {
+    color: var(--cor-primaria, #007bff);
+    border-bottom-color: var(--cor-primaria, #007bff);
+    font-weight: bold;
+}
+.admin-tab-content {
+    display: none; /* Esconde todas as abas por padrão */
+}
+.admin-tab-content.active {
+    display: block; /* Mostra apenas a aba ativa */
+}
+
+
+
+/* Ajustes finos de responsividade para a lista de presença */
+@media (max-width: 992px) {
+    .player-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+}

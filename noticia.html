@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Jogo</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/noticia.css">
+</head>
+
+<body>
+
+<nav class="navbar"></nav>
+
+    <header class="noticia-header">
+        <h1 id="noticia-titulo"></h1>
+        <p id="noticia-placar"></p>
+    </header>
+
+    <main class="container">
+
+        <div class="noticia-conteudo">
+            <a href="index.html" class="back-link">&larr; Voltar para a página inicial</a>
+
+            <article id="noticia-descricao"></article>
+
+            <section id="carrossel" style="display: none;">
+                <h2>Galeria de Fotos e Vídeos</h2>
+                <div id="video-loader" style="text-align: center; padding: 20px; color: #555;">
+                    <p>Buscando vídeos da partida...</p>
+                </div>
+                <div class="carrossel-container">
+                    <div class="carrossel-slides"></div>
+                    <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+   <footer class="footer"></footer>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/noticia.js"></script>
+    <script src="assets/js/lib/httpClient.js"></script>
+</body>
+
+</html>

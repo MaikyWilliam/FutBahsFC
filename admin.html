@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Admin - Futebol de Sábado</title>
+    <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+    <div class="admin-container">
+        <h1>Painel de Admin</h1>
+        <p id="loading-message">Carregando dados.json...</p>
+        <div id="main-content" class="hidden">
+            
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-target="tab-jogadores">Gerenciar Jogadores</button>
+                <button class="tab-btn" data-target="tab-sorteio">Sorteio Pré-Jogo</button>
+                <button class="tab-btn" data-target="tab-registrar">Registrar Jogo</button>
+            </div>
+
+            <div id="tab-jogadores" class="admin-tab-content active">
+                <section class="secao-admin">
+                    <h2>Gerenciar Jogadores</h2>
+                    <form id="add-player-form" class="player-form">
+                        <input type="text" id="new-player-name" placeholder="Nome do novo jogador" required><input type="text" id="new-player-pos" placeholder="Posição" required><input type="number" id="new-player-numero" placeholder="Número"><input type="number" id="new-player-titulos" placeholder="Títulos"><input type="number" id="new-player-nota" placeholder="Nota (1-10)" min="1" max="10" required><input type="text" id="new-player-foto" placeholder="Arquivo da foto (ex: jonas.jpg)">
+                        <button type="submit" class="btn-admin">Adicionar Jogador</button>
+                    </form>
+                    <hr>
+                    <h3>Elenco Atual</h3>
+                    <ul id="player-management-list"></ul>
+                    <button id="salvar-jogadores-btn" class="btn-admin" style="background-color: #28a745;">Salvar Alterações nos Jogadores</button>
+                </section>
+            </div>
+
+            <div id="tab-sorteio" class="admin-tab-content">
+                <section class="secao-admin">
+                    <h2>Ferramenta de Sorteio (Pré-Jogo)</h2>
+                    <fieldset><legend>1. Selecione os jogadores presentes</legend><div id="confirmar-presenca-list" class="player-grid"></div><button id="sortear-times-btn" class="btn-admin">Sortear Times Balanceados</button></fieldset>
+                    <fieldset id="times-sorteados-container" class="hidden" style="margin-top: 20px;"><legend>2. Times Sorteados</legend><div class="montagem-container"><div class="time-box" id="sorteio-azul-list"></div><div class="time-box" id="sorteio-vermelho-list"></div></div><button id="salvar-sorteio-btn" class="btn-admin" style="background-color: #17a2b8;">Salvar Times Sorteados no JSON</button></fieldset>
+                </section>
+            </div>
+
+            <div id="tab-registrar" class="admin-tab-content">
+                <section class="secao-admin">
+                    <h2>Registrar Jogo Completo (Pós-Partida)</h2>
+                    <fieldset><legend>Passo 1: Arraste os jogadores para os times da partida</legend><div class="drag-drop-container"><div class="drop-zone" id="disponiveis-list"><h4>Disponíveis</h4></div><div class="drop-zone" id="azul-list-drag"><h4>Time Azul</h4></div><div class="drop-zone" id="vermelho-list-drag"><h4>Time Vermelho</h4></div></div></fieldset>
+                    <fieldset><legend>Passo 2: Avance para registrar stats e notícia</legend><button id="confirmar-times-btn" class="btn-admin">Próximo Passo</button></fieldset>
+                </section>
+                <div id="final-steps" class="hidden">
+                    <section class="secao-admin"><h3>Passo 3: Registrar Gols e Assistências</h3><table class="stats-table"><thead><tr><th>Jogador</th><th>Gols</th><th>Assistências</th></tr></thead><tbody id="stats-body"></tbody></table></section>
+                    <section class="secao-admin"><h3>Passo 4: Criar a Notícia</h3><label>Resultado Final:</label><select id="resultado-geral"><option value="empate">Empate</option><option value="azul">Vitória do Time Azul</option><option value="vermelho">Vitória do Time Vermelho</option></select><label>Data do Jogo:</label><input type="date" id="data-jogo" required><label>Título:</label><input type="text" id="titulo" placeholder="Título da Notícia"><label>Placar:</label><input type="text" id="placar" placeholder="Ex: 3 x 2"><label>Descrição:</label><textarea id="descricao"></textarea><label>Fotos:</label><input type="file" id="midias" multiple accept="image/*"><div id="image-preview"></div></section>
+                    <section class="secao-admin"><h3>Passo 5: Finalizar e Gerar JSON</h3><button id="gerar-noticia-btn" class="btn-admin">Gerar JSON com Nova Notícia</button></section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="edit-modal" class="modal-overlay hidden">
+        <div class="modal-content"><div class="modal-header"><h2>Editar Jogador</h2><button class="close-modal">&times;</button></div><form id="edit-player-form" class="player-form"><input type="hidden" id="edit-player-id"><label>Nome:</label><input type="text" id="edit-player-name" required><label>Posição:</label><input type="text" id="edit-player-pos" required><label>Número:</label><input type="number" id="edit-player-numero"><label>Títulos:</label><input type="number" id="edit-player-titulos"><label>Nota (1-10):</label><input type="number" id="edit-player-nota" min="1" max="10"><label>Arquivo da Foto:</label><input type="text" id="edit-player-foto"><button type="submit" class="btn-admin">Salvar Alterações</button></form></div>
+    </div>
+
+    <footer class="footer"></footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/pt_br.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>
