@@ -16,10 +16,22 @@
   },
   "financeiro": {
     "saldoAtual": 150.75,
-    "valorMensalidade": 50.00,
+    "valorMensalidade": 50,
     "historicoTransacoes": [
-      { "id": 1, "data": "2025-06-01", "descricao": "Pagamento da mensalidade de Jonas Bueno", "tipo": "entrada", "valor": 50 },
-      { "id": 2, "data": "2025-06-05", "descricao": "Aluguel da quadra", "tipo": "saida", "valor": 120 }
+      {
+        "id": 1,
+        "data": "2025-06-01",
+        "descricao": "Pagamento da mensalidade de Jonas Bueno",
+        "tipo": "entrada",
+        "valor": 50
+      },
+      {
+        "id": 2,
+        "data": "2025-06-05",
+        "descricao": "Aluguel da quadra",
+        "tipo": "saida",
+        "valor": 120
+      }
     ],
     "statusMensalidades": {
       "1": "2025-06-01"
@@ -30,9 +42,9 @@
       "id": 7,
       "nome": "Adriano",
       "posicao": "Meia",
-      "pontos": 21,
-      "gols": 5,
-      "assistencias": 11,
+      "pontos": 24,
+      "gols": 8,
+      "assistencias": 12,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -42,7 +54,7 @@
       "id": 8,
       "nome": "Daniel da Silva",
       "posicao": "Goleiro",
-      "pontos": 13,
+      "pontos": 16,
       "gols": 0,
       "assistencias": 0,
       "numero": 0,
@@ -51,11 +63,23 @@
       "nota": 9
     },
     {
+      "id": 19,
+      "nome": "Dinho",
+      "posicao": "Meia",
+      "numero": 8,
+      "titulos": 0,
+      "nota": 9,
+      "foto": "default.jpeg",
+      "pontos": 3,
+      "gols": 0,
+      "assistencias": 0
+    },
+    {
       "id": 9,
       "nome": "Gladimir",
       "posicao": "Zagueiro",
       "pontos": 7,
-      "gols": 2,
+      "gols": 3,
       "assistencias": 2,
       "numero": 0,
       "foto": "default.jpeg",
@@ -67,8 +91,8 @@
       "nome": "Guilherme",
       "posicao": "Atacante",
       "pontos": 25,
-      "gols": 23,
-      "assistencias": 12,
+      "gols": 25,
+      "assistencias": 13,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -80,9 +104,9 @@
       "posicao": "Meia",
       "numero": 10,
       "pontos": 38,
-      "gols": 23,
-      "assistencias": 21,
-      "foto": "Jonas_bueno.jpeg",
+      "gols": 24,
+      "assistencias": 22,
+      "foto": "jonas_bueno.jpeg",
       "titulos": 3,
       "nota": 9
     },
@@ -90,9 +114,9 @@
       "id": 11,
       "nome": "Juninho",
       "posicao": "Atacante",
-      "pontos": 28,
-      "gols": 27,
-      "assistencias": 12,
+      "pontos": 31,
+      "gols": 29,
+      "assistencias": 13,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -141,7 +165,7 @@
       "pontos": 14,
       "numero": 29,
       "gols": 1,
-      "assistencias": 3,
+      "assistencias": 4,
       "foto": "maiky_william.jpeg",
       "titulos": 2,
       "nota": 8
@@ -162,7 +186,7 @@
       "id": 14,
       "nome": "Patrick Silveira",
       "posicao": "Atacante",
-      "pontos": 18,
+      "pontos": 21,
       "gols": 32,
       "assistencias": 8,
       "numero": 0,
@@ -186,7 +210,7 @@
       "id": 16,
       "nome": "Rafael",
       "posicao": "Volante",
-      "pontos": 16,
+      "pontos": 19,
       "gols": 7,
       "assistencias": 9,
       "numero": 0,
@@ -210,7 +234,7 @@
       "id": 5,
       "nome": "Wagner Cavalheiro",
       "posicao": "Volante",
-      "pontos": 3,
+      "pontos": 6,
       "gols": 6,
       "assistencias": 1,
       "numero": 0,
@@ -244,6 +268,21 @@
     }
   ],
   "jogos": [
+    {
+      "id": 6,
+      "data": "21/06/2025",
+      "titulo": "Vitória suada! Time Vermelho vence por 8 a 7 em clássico equilibrado no Futhaus7",
+      "placar": "8 x 7",
+      "descricao": "<p><br></p><p>Na manhã deste sábado (21), às 10h, o campo do <strong>Futhaus7</strong> foi palco de mais um confronto emocionante entre os times <strong>Azul</strong> e <strong>Vermelho</strong>. Em um jogo marcado por intensidade do início ao fim, o <strong>Time Vermelho levou a melhor</strong>, vencendo por <strong>8 a 7</strong> após um verdadeiro espetáculo de futebol.</p><p>A partida começou com ambos os lados buscando o ataque, mas foi o Time Vermelho que demonstrou mais eficiência nas finalizações e soube aproveitar melhor as chances. O grande destaque da partida foi <strong>Daniel da Silva</strong>, que com nota <strong>9,00</strong>, se destacou tanto defensivamente quanto ofensivamente, sendo eleito o <strong>Craque da Partida</strong> e também o <strong>Paredão</strong>, com defesas difíceis que garantiram a vantagem no placar.</p><p>Outro nome importante foi <strong>Adriano</strong>, que fechou a partida com nota <strong>8,91</strong> e foi o <strong>artilheiro</strong> do duelo, sendo peça-chave no ataque vermelho. Já <strong>Bueno</strong> brilhou como <strong>garçom</strong>, distribuindo assistências precisas que resultaram em gols decisivos. Na defesa, <strong>Maiky William</strong> foi o <strong>xerifão</strong>, com uma atuação sólida e diversos desarmes importantes ao longo do jogo.</p><p>Pelo lado azul, houve bastante luta e entrega, com destaque para <strong>Wagner Cavalheiro</strong>, que alcançou a nota <strong>8,55</strong>, sendo um dos mais regulares da equipe tanto na defesa quanto no apoio ao ataque.</p><h3>🔥 <strong>Destaques da Partida</strong></h3><ul><li><p><strong>Craque:</strong> Daniel da Silva (nota 9,00)</p></li><li><p><strong>Artilheiro:</strong> Adriano</p></li><li><p><strong>Garçom:</strong> Bueno</p></li><li><p><strong>Xerifão:</strong> Maiky William</p></li><li><p><strong>Paredão:</strong> Daniel da Silva</p></li></ul><h3>⚽ <strong>Placar Final</strong></h3><p><strong>🟥 Time Vermelho: 8 x 7 Time Azul 🟦</strong></p><p>O equilíbrio da partida refletiu o alto nível técnico das equipes. A rivalidade saudável entre os times garante mais um capítulo memorável no calendário do grupo. Agora, é foco no próximo jogo, onde a promessa é de mais emoção, gols e disputas acirradas no Futhaus7!</p>",
+      "imagem_destaque": "jogo_21-06.jpeg",
+      "midias": [
+        {
+          "tipo": "imagem",
+          "url": "jogo_21-06.jpeg"
+        }
+      ],
+      "temaVencedor": "vermelho"
+    },
     {
       "id": 5,
       "data": "14/06/2025",
