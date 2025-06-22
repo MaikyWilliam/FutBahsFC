@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     carregarNoticia(dados);
 });
 
+/**
+ * Converte uma data no formato "DD/MM/YYYY" para "YYYY-MM-DD" para comparação.
+ * @param {string} dataStr A data em formato brasileiro.
+ * @returns {string|null} A data em formato ISO ou null se a entrada for inválida.
+ */
+function converterDataParaISO(dataStr) {
+    if (!dataStr || dataStr.split('/').length !== 3) return null;
+    const partes = dataStr.split('/'); // [DD, MM, YYYY]
+    return `${partes[2]}-${partes[1]}-${partes[0]}`; // YYYY-MM-DD
+}
+
 async function carregarNoticia(dados) {
     const urlParams = new URLSearchParams(window.location.search);
     const jogoId = parseInt(urlParams.get('jogoId'));
@@ -23,10 +34,23 @@ async function carregarNoticia(dados) {
 
     let allMedia = [...(jogo.midias || [])].map(m => ({ ...m, url: `assets/imagens/${m.url.split('/').pop()}` }));
 
-    const apiVideos = await fetchAndRenderVideosWithCache();
-    if (apiVideos.length > 0) {
-        allMedia.push(...apiVideos);
+    // --- LÓGICA DE VÍDEO ATUALIZADA ---
+    const httpClient = new HttpClient();
+    const ultimoSabado = httpClient.getPreviousSaturday(new Date()); // Retorna { date: "YYYY-MM-DD", ... }
+    const dataDoJogoISO = converterDataParaISO(jogo.data);      // Converte "DD/MM/YYYY" para "YYYY-MM-DD"
+
+    // Condição: Só busca vídeos se a data do jogo for igual à data do último sábado
+    if (dataDoJogoISO === ultimoSabado.date) {
+        console.log(`A data do jogo (${dataDoJogoISO}) corresponde ao último sábado. Buscando vídeos...`);
+        const apiVideos = await fetchAndRenderVideosWithCache();
+        if (apiVideos.length > 0) {
+            allMedia.push(...apiVideos);
+        }
+    } else {
+        console.log(`A data do jogo (${dataDoJogoISO}) não corresponde ao último sábado (${ultimoSabado.date}). Vídeos não serão carregados.`);
+        videoLoader.style.display = 'none'; // Esconde a mensagem "Buscando vídeos..."
     }
+    // --- Fim da lógica atualizada ---
     
     if (allMedia.length > 0) {
         carrosselSection.style.display = 'block';
@@ -41,7 +65,7 @@ async function carregarNoticia(dados) {
             }
             slidesContainer.appendChild(slideDiv);
         });
-        mostrarSlide(0);
+        // A função mostrarSlide é chamada pelo common.js, não precisa chamar aqui.
     }
 }
 
@@ -54,6 +78,7 @@ async function fetchAndRenderVideosWithCache() {
 
     if (cachedData) {
         console.log("Vídeos carregados do CACHE para a data:", saturday.date);
+        videoLoader.style.display = 'none'; // Esconde o loader se pegar do cache
         return JSON.parse(cachedData);
     } else {
         try {

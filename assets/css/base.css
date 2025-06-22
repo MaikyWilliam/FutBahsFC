@@ -657,6 +657,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #historico-jogos {
+        padding: 25px 5px; 
+    }
+
     .sobre-grid {
         grid-template-columns: 1fr;
     }

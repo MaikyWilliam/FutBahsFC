@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
             previewContainer.appendChild(radio);
 
             imagePreview.appendChild(previewContainer);
-            novasMidias.push({ tipo: 'imagem', url: `imagens/${file.name}` });
+            novasMidias.push({ tipo: 'imagem', url: `assets/imagens/${file.name}` });
         });
     }
 
@@ -453,46 +453,83 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function inicializarDragAndDrop() {
-        disponiveisList.innerHTML = '<h4>Disponíveis</h4>';
-        document.querySelectorAll('#azul-list-drag .player-item, #vermelho-list-drag .player-item').forEach(item => item.remove());
+    disponiveisList.innerHTML = '<h4>Disponíveis</h4>';
+    document.querySelectorAll('#azul-list-drag .player-item, #vermelho-list-drag .player-item').forEach(item => item.remove());
 
-        // Cria os elementos arrastáveis
-        dadosDoSite.jogadores.sort((a, b) => a.nome.localeCompare(b.nome)).forEach(p => {
-            const playerEl = document.createElement('div');
-            playerEl.className = 'player-item';
-            playerEl.draggable = true;
-            playerEl.textContent = p.nome;
-            playerEl.dataset.id = p.id;
-            disponiveisList.appendChild(playerEl);
-        });
+    dadosDoSite.jogadores.sort((a, b) => a.nome.localeCompare(b.nome)).forEach(p => {
+        const playerEl = document.createElement('div');
+        playerEl.className = 'player-item';
+        playerEl.draggable = true;
+        playerEl.textContent = p.nome;
+        playerEl.dataset.id = p.id;
+        disponiveisList.appendChild(playerEl);
+    });
 
-        // Adiciona listeners para os itens arrastáveis
-        document.querySelectorAll('.player-item').forEach(item => {
-            item.addEventListener('dragstart', (e) => {
-                e.dataTransfer.setData('text/plain', e.target.dataset.id);
-                setTimeout(() => e.target.classList.add('dragging'), 0);
-            });
-            item.addEventListener('dragend', (e) => e.target.classList.remove('dragging'));
-        });
+    const playerItems = document.querySelectorAll('.player-item');
+    let draggedItem = null;
 
-        // Adiciona listeners para as zonas de soltura
-        dropZones.forEach(zone => {
-            zone.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                e.currentTarget.classList.add('drag-over');
-            });
-            zone.addEventListener('dragleave', (e) => e.currentTarget.classList.remove('drag-over'));
-            zone.addEventListener('drop', (e) => {
-                e.preventDefault();
-                e.currentTarget.classList.remove('drag-over');
-                const id = e.dataTransfer.getData('text/plain');
-                const draggableElement = document.querySelector(`.player-item[data-id="${id}"]`);
-                if (draggableElement) {
-                    e.currentTarget.appendChild(draggableElement);
-                }
-            });
+    // --- Eventos de Mouse (Desktop) ---
+    playerItems.forEach(item => {
+        item.addEventListener('dragstart', (e) => {
+            draggedItem = e.target;
+            setTimeout(() => e.target.classList.add('dragging'), 0);
         });
-    }
+        item.addEventListener('dragend', () => {
+            draggedItem.classList.remove('dragging');
+            draggedItem = null;
+        });
+    });
+
+    dropZones.forEach(zone => {
+        zone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.currentTarget.classList.add('drag-over');
+        });
+        zone.addEventListener('dragleave', (e) => {
+            e.currentTarget.classList.remove('drag-over');
+        });
+        zone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.currentTarget.classList.remove('drag-over');
+            if (draggedItem) {
+                e.currentTarget.appendChild(draggedItem);
+            }
+        });
+    });
+
+    // --- Eventos de Toque (Mobile/Tablet) ---
+    let touchDraggedItem = null;
+    playerItems.forEach(item => {
+        item.addEventListener('touchstart', (e) => {
+            touchDraggedItem = e.target;
+            touchDraggedItem.classList.add('dragging');
+        }, { passive: true });
+
+        item.addEventListener('touchend', () => {
+            if (touchDraggedItem) {
+                 touchDraggedItem.classList.remove('dragging');
+                 touchDraggedItem = null;
+                 document.querySelectorAll('.drag-over').forEach(zone => zone.classList.remove('drag-over'));
+            }
+        });
+    });
+
+    document.body.addEventListener('touchmove', (e) => {
+        if (touchDraggedItem) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const elementUnderTouch = document.elementFromPoint(touch.clientX, touch.clientY);
+            const dropZoneUnderTouch = elementUnderTouch ? elementUnderTouch.closest('.drop-zone') : null;
+
+            document.querySelectorAll('.drag-over').forEach(zone => zone.classList.remove('drag-over'));
+
+            if (dropZoneUnderTouch) {
+                dropZoneUnderTouch.classList.add('drag-over');
+                dropZoneUnderTouch.appendChild(touchDraggedItem);
+            }
+        }
+    }, { passive: false });
+}
 
     //================================================
     // UTILITÁRIOS
