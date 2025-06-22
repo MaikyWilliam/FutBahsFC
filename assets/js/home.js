@@ -132,7 +132,7 @@ function carregarCardsUltimosJogos(jogos, gridId) {
     jogos.forEach(jogo => {
         const card = document.createElement('div');
         card.className = 'card card-ultimo-jogo';
-        const imagemDestaque = jogo.imagem_destaque ? `${jogo.imagem_destaque}` : 'placeholder-noticia.jpg';
+        const imagemDestaque = jogo.imagem_destaque ? `assets/imagens/${jogo.imagem_destaque}` : '/placeholder-noticia.jpg';
         const descricaoTexto = jogo.descricao ? jogo.descricao.replace(/<[^>]*>/g, '').substring(0, 120) : "Sem descrição disponível.";
 
         card.innerHTML = `
