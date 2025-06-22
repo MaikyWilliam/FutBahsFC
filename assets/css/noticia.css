@@ -21,6 +21,6 @@
 
 @media (max-width: 768px) {
     .noticia-conteudo {
-        padding: 10px 10px; /* Reduz o padding em telas menores */
+        padding: 0px 0px; /* Reduz o padding em telas menores */
     }
 }
