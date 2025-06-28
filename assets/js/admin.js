@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         const imagemDestaqueSelecionada = document.querySelector('input[name="imagem_destaque_selecao"]:checked');
-        const imagemDestaqueUrl = imagemDestaqueSelecionada ? `imagens/${imagemDestaqueSelecionada.value}` : (novasMidias.length > 0 ? novasMidias[0].url : "");
+        const imagemDestaqueUrl = imagemDestaqueSelecionada ? `${imagemDestaqueSelecionada.value}` : (novasMidias.length > 0 ? novasMidias[0].url : "");
         
         const novaNoticia = {
             id: dadosParaSalvar.jogos.length > 0 ? Math.max(...dadosParaSalvar.jogos.map(j => j.id)) + 1 : 1,
