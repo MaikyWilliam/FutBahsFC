@@ -6,9 +6,9 @@
     }
   ],
   "proximoJogo": {
-    "data": "Sábado, 28/06/2025 - 10:00h",
+    "data": "Sábado, 05/07/2025 - 10:00h",
     "local": "Futhaus 7, Estância Velha",
-    "expectativa": "🔥 Semana Vermelha no ar! 🔴 Parabéns ao Time Vermelho pela vitória suada e merecida! Por conta do grande desempenho, o site estará com as cores do time vencedor durante toda a semana. Que venha o próximo desafio! 💪⚽"
+      "expectativa": "💙 Semana Azul no ar! 🔵 Parabéns ao Time Azul pela vitória espetacular e cheia de garra! Por conta do grande desempenho, o site estará com as cores do time vencedor durante toda a semana. Que venha o próximo desafio! 🚀⚽"
   },
   "timesSorteados": {
     "azul": [],
@@ -54,7 +54,7 @@
       "id": 8,
       "nome": "Daniel da Silva",
       "posicao": "Goleiro",
-      "pontos": 16,
+      "pontos": 19,
       "gols": 0,
       "assistencias": 0,
       "numero": 0,
@@ -71,7 +71,7 @@
       "nota": 9,
       "foto": "default.jpeg",
       "pontos": 6,
-      "gols": 2,
+      "gols": 5,
       "assistencias": 1
     },
     {
@@ -91,8 +91,8 @@
       "nome": "Guilherme",
       "posicao": "Atacante",
       "pontos": 28,
-      "gols": 27,
-      "assistencias": 14,
+      "gols": 29,
+      "assistencias": 15,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -103,8 +103,8 @@
       "nome": "Jonas Bueno",
       "posicao": "Meia",
       "numero": 10,
-      "pontos": 38,
-      "gols": 25,
+      "pontos": 41,
+      "gols": 27,
       "assistencias": 23,
       "foto": "jonas_bueno.jpeg",
       "titulos": 3,
@@ -114,8 +114,8 @@
       "id": 11,
       "nome": "Juninho",
       "posicao": "Atacante",
-      "pontos": 34,
-      "gols": 30,
+      "pontos": 37,
+      "gols": 33,
       "assistencias": 14,
       "numero": 0,
       "foto": "default.jpeg",
@@ -162,9 +162,9 @@
       "id": 2,
       "nome": "Maiky William",
       "posicao": "Zagueiro",
-      "pontos": 14,
+      "pontos": 17,
       "numero": 29,
-      "gols": 1,
+      "gols": 2,
       "assistencias": 4,
       "foto": "maiky_william.jpeg",
       "titulos": 2,
@@ -223,8 +223,8 @@
       "nome": "Renato Goldani",
       "posicao": "Meia",
       "pontos": 29,
-      "gols": 10,
-      "assistencias": 3,
+      "gols": 11,
+      "assistencias": 4,
       "numero": 0,
       "foto": "renato_goldani.jpg",
       "titulos": 0,
@@ -236,7 +236,7 @@
       "posicao": "Volante",
       "pontos": 9,
       "gols": 7,
-      "assistencias": 1,
+      "assistencias": 3,
       "numero": 0,
       "foto": "wagner_cavalheiro.jpg",
       "titulos": 0,
@@ -258,7 +258,7 @@
       "id": 17,
       "nome": "Zavalha",
       "posicao": "Zagueiro",
-      "pontos": 28,
+      "pontos": 31,
       "gols": 5,
       "assistencias": 2,
       "numero": 0,
@@ -268,6 +268,29 @@
     }
   ],
   "jogos": [
+    {
+      "id": 8,
+      "data": "05/07/2025",
+      "titulo": "Explosão de Gols no Futhaus7! Time Azul Vence Duelo Eletrizante por 9 a 7!",
+      "placar": "9 x 7",
+      "descricao": "<p><br></p><p><strong>Estância Velha, RS – 5 de julho de 2025</strong> – Em uma manhã de sábado que começou com um pequeno atraso devido à chegada dos jogadores, o Futhaus7 foi palco de um confronto eletrizante. O Time Azul e o Time Vermelho protagonizaram uma partida cheia de reviravoltas, com o time azul levando a melhor ao final, vencendo por 9 a 7.</p><p>Desde o apito inicial, o jogo foi um festival de ataques e defesas. O goleiro Daniel da Silva (Time Azul) foi testado logo de cara, mostrando reflexos rápidos para evitar o gol. E foi o Time Azul que abriu o placar: Juninho balançou as redes com assistência de William Ramires, colocando sua equipe na frente.</p><p>O Time Vermelho não demorou a responder, com Dinho Hazard marcando seu primeiro gol no jogo. A partir daí, o confronto se tornou um verdadeiro \"lá e cá\". O goleiro Piu Piu (Time Vermelho) teve trabalho intenso, realizando diversas defesas difíceis em chutes de Josias, Filipe e do próprio Juninho, que tentavam a todo custo furar a defesa adversária.</p><p>A partida seguiu com gols importantes de Dinho Hazard e Renato Goldani para o Time Vermelho, muitos deles com assistência de Guilherme Schweitzer e Wagner Cavalheiro, mantendo o jogo acirrado. Murilo também contribuiu com um gol, mostrando a persistência da equipe vermelha.</p><p>Pelo lado do Time Azul, Juninho seguiu em dia inspirado, somando mais gols à sua conta. A parceria entre William Ramires e Bueno também foi letal, com gols e assistências que impulsionaram o ataque azul. Filipe e Maiky William também deixaram suas marcas, garantindo que o Time Azul mantivesse a vantagem crucial.</p><p>O jogo foi marcado por um incessante troca-troca de bolas na rede, com ambos os goleiros, Daniel da Silva e Piu Piu, sendo peças fundamentais para suas equipes, evitando que o placar fosse ainda maior. A partida, disputada com intensidade por quase uma hora, consagrou o Time Azul em uma vitória suada e repleta de lances de tirar o fôlego.</p>",
+      "imagem_destaque": "Foto3_05_07.jpeg",
+      "midias": [
+        {
+          "tipo": "imagem",
+          "url": "assets/imagens/Foto1_05_07.jpeg"
+        },
+        {
+          "tipo": "imagem",
+          "url": "assets/imagens/Foto2_05_07.jpeg"
+        },
+        {
+          "tipo": "imagem",
+          "url": "assets/imagens/Foto3_05_07.jpeg"
+        }
+      ],
+      "temaVencedor": "azul"
+    },
     {
       "id": 7,
       "data": "28/06/2025",
