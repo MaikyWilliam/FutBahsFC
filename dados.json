@@ -6,9 +6,9 @@
     }
   ],
   "proximoJogo": {
-    "data": "Sábado, 05/07/2025 - 10:00h",
+    "data": "Sábado, 19/07/2025 - 10:00h",
     "local": "Futhaus 7, Estância Velha",
-      "expectativa": "💙 Semana Azul no ar! 🔵 Parabéns ao Time Azul pela vitória espetacular e cheia de garra! Por conta do grande desempenho, o site estará com as cores do time vencedor durante toda a semana. Que venha o próximo desafio! 🚀⚽"
+    "expectativa": "💙 Semana Azul no ar! 🔵 Parabéns ao Time Azul pela vitória espetacular e cheia de garra! Por conta do grande desempenho, o site estará com as cores do time vencedor durante toda a semana. Que venha o próximo desafio! 🚀⚽"
   },
   "timesSorteados": {
     "azul": [],
@@ -42,9 +42,9 @@
       "id": 7,
       "nome": "Adriano",
       "posicao": "Meia",
-      "pontos": 24,
-      "gols": 8,
-      "assistencias": 13,
+      "pontos": 27,
+      "gols": 9,
+      "assistencias": 15,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -75,11 +75,23 @@
       "assistencias": 1
     },
     {
+      "id": 20,
+      "nome": "Filipe Oliveira",
+      "posicao": "Meia",
+      "pontos": 0,
+      "gols": 0,
+      "assistencias": 0,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 7
+    },
+    {
       "id": 9,
       "nome": "Gladimir",
       "posicao": "Zagueiro",
       "pontos": 10,
-      "gols": 3,
+      "gols": 4,
       "assistencias": 2,
       "numero": 0,
       "foto": "default.jpeg",
@@ -92,7 +104,7 @@
       "posicao": "Atacante",
       "pontos": 28,
       "gols": 29,
-      "assistencias": 15,
+      "assistencias": 16,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -103,9 +115,9 @@
       "nome": "Jonas Bueno",
       "posicao": "Meia",
       "numero": 10,
-      "pontos": 41,
-      "gols": 27,
-      "assistencias": 23,
+      "pontos": 44,
+      "gols": 28,
+      "assistencias": 24,
       "foto": "jonas_bueno.jpeg",
       "titulos": 3,
       "nota": 9
@@ -115,24 +127,12 @@
       "nome": "Juninho",
       "posicao": "Atacante",
       "pontos": 37,
-      "gols": 33,
-      "assistencias": 14,
+      "gols": 36,
+      "assistencias": 15,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
       "nota": 7
-    },
-    {
-      "id": 12,
-      "nome": "Lucão",
-      "posicao": "Atacante",
-      "pontos": 10,
-      "gols": 23,
-      "assistencias": 14,
-      "numero": 0,
-      "foto": "default.jpeg",
-      "titulos": 0,
-      "nota": 8
     },
     {
       "id": 6,
@@ -162,10 +162,10 @@
       "id": 2,
       "nome": "Maiky William",
       "posicao": "Zagueiro",
-      "pontos": 17,
+      "pontos": 20,
       "numero": 29,
-      "gols": 2,
-      "assistencias": 4,
+      "gols": 6,
+      "assistencias": 5,
       "foto": "maiky_william.jpeg",
       "titulos": 2,
       "nota": 8
@@ -183,22 +183,10 @@
       "nota": 5
     },
     {
-      "id": 14,
-      "nome": "Patrick Silveira",
-      "posicao": "Atacante",
-      "pontos": 21,
-      "gols": 33,
-      "assistencias": 9,
-      "numero": 0,
-      "foto": "default.jpeg",
-      "titulos": 0,
-      "nota": 8
-    },
-    {
       "id": 15,
       "nome": "Piu Piu",
       "posicao": "Goleiro",
-      "pontos": 24,
+      "pontos": 27,
       "gols": 0,
       "assistencias": 0,
       "numero": 0,
@@ -222,8 +210,8 @@
       "id": 3,
       "nome": "Renato Goldani",
       "posicao": "Meia",
-      "pontos": 29,
-      "gols": 11,
+      "pontos": 32,
+      "gols": 13,
       "assistencias": 4,
       "numero": 0,
       "foto": "renato_goldani.jpg",
@@ -246,8 +234,8 @@
       "id": 18,
       "nome": "William Dorneles",
       "posicao": "Volante",
-      "pontos": 9,
-      "gols": 2,
+      "pontos": 12,
+      "gols": 3,
       "assistencias": 0,
       "numero": 0,
       "foto": "default.jpeg",
@@ -268,6 +256,21 @@
     }
   ],
   "jogos": [
+    {
+      "id": 9,
+      "data": "12/07/2025",
+      "titulo": "#FutebolNoFrio: Azul Garante Vitória Suada",
+      "placar": "11 x 9",
+      "descricao": "<p>Em uma manhã de sábado com o clima ameno e um céu nublado pairando sobre Estância Velha, o Futhaus7 se tornou o palco de um confronto memorável no dia 12 de julho. Iniciada às 10h, a partida entre as equipes vermelha e azul não decepcionou os presentes, entregando um espetáculo de 20 gols e emoção do início ao fim, com o time azul emergindo vitorioso por um placar apertado de 11 a 9.</p><p>Apesar da temperatura mais baixa, o calor da competição aqueceu o campo. O time azul começou com ímpeto, abrindo uma vantagem que parecia promissora, impulsionado pela precisão nos passes e pela finalização afiada de jogadores como Juninho e Maiky William, que demonstraram um entrosamento notável no ataque. A torcida presente no Futhaus7 vibrava a cada gol, sentindo a adrenalina da disputa.</p><p>Contudo, o time vermelho não se intimidou com o placar adverso. Com garra e determinação, buscaram a reação, liderados por Lucas e Gladir Rosa de Souza, que descontaram e reacenderam a esperança de seus torcedores. Os lances se sucediam com rapidez, e a cada investida do time vermelho, a pressão sobre a defesa azul aumentava.</p><p>O segundo tempo trouxe ainda mais emoção para o Futhaus7. O time vermelho intensificou a pressão, chegando a encostar no placar, levando a torcida ao delírio. No entanto, em momentos cruciais, o time azul soube manter a calma e aproveitar as oportunidades, com Willian Dorneles e novamente Maiky William marcando gols que se provaram decisivos para a vitória.</p><p>Ao final da partida, os holofotes se voltaram para os destaques do dia. Piupiu, o goleiro do time azul, foi aclamado como o \"Craque\" do jogo, com uma atuação segura e defesas providenciais que lhe renderam a excelente nota de 9,33. Maiky William foi o \"Artilheiro\" da partida, coroando sua performance com gols importantes, enquanto Daniel da Silva, apesar da derrota de sua equipe, recebeu o reconhecimento de \"Paredão\" pela sua atuação no gol vermelho.</p><p>Mesmo com o clima mais frio, a manhã no Futhaus7 foi incandescente, marcada por um jogo disputado e cheio de reviravoltas. A vitória do time azul por 11 a 9 foi o resultado de um confronto eletrizante que certamente ficará na memória dos presentes, mostrando a beleza e a emoção do futebol amador.</p>",
+      "imagem_destaque": "foto-12-07.jpeg",
+      "midias": [
+        {
+          "tipo": "imagem",
+          "url": "assets/imagens/foto-12-07.jpeg"
+        }
+      ],
+      "temaVencedor": "azul"
+    },
     {
       "id": 8,
       "data": "05/07/2025",
