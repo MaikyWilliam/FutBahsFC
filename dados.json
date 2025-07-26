@@ -226,6 +226,30 @@
       "foto": "default.jpeg",
       "titulos": 0,
       "nota": 8
+    },
+    {
+      "id": 21,
+      "nome": "Lucas",
+      "posicao": "Meia",
+      "pontos": 15,
+      "gols": 17,
+      "assistencias": 10,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 9
+    },
+    {
+      "id": 22,
+      "nome": "William Ramires",
+      "posicao": "Meia",
+      "pontos": 0,
+      "gols": 0,
+      "assistencias": 0,
+      "numero": 0,
+      "foto": "default.jpeg",
+      "titulos": 0,
+      "nota": 8
     }
   ],
   "jogos": [
@@ -338,7 +362,7 @@
       "temaVencedor": "azul"
     }
   ],
-   "timesSorteados": {
+  "timesSorteados": {
     "azul": [],
     "vermelho": []
   },
