@@ -6,43 +6,16 @@
     }
   ],
   "proximoJogo": {
-    "data": "Sábado, 26/07/2025 - 10:00h",
+    "data": "Sábado, 02/08/2025 - 10:00h",
     "local": "Futhaus 7, Estância Velha",
-    "expectativa": "🤝 Empate eletrizante! 🔴🔵 Azul e Vermelho protagonizaram um jogaço de 8 gols e muita emoção. O site seguirá neutro nesta semana, em homenagem ao equilíbrio e à garra de ambas as equipes. Que venha o próximo duelo! ⚽🔥"
-  },
-  "timesSorteados": {
-    "azul": [],
-    "vermelho": []
-  },
-  "financeiro": {
-    "saldoAtual": 150.75,
-    "valorMensalidade": 50,
-    "historicoTransacoes": [
-      {
-        "id": 1,
-        "data": "2025-06-01",
-        "descricao": "Pagamento da mensalidade de Jonas Bueno",
-        "tipo": "entrada",
-        "valor": 50
-      },
-      {
-        "id": 2,
-        "data": "2025-06-05",
-        "descricao": "Aluguel da quadra",
-        "tipo": "saida",
-        "valor": 120
-      }
-    ],
-    "statusMensalidades": {
-      "1": "2025-06-01"
-    }
+    "expectativa": "Vitória Azul! 🔵🔥 Em um jogaço de 13 gols e muita emoção, o time Azul confirmou sua superioridade, vencendo o Vermelho por 8 a 5. A partida mostrou a força e o talento de ambas as equipes, e a expectativa é de mais confrontos eletrizantes pela frente. Que venha o próximo desafio! ⚽"
   },
   "jogadores": [
     {
       "id": 7,
       "nome": "Adriano",
       "posicao": "Meia",
-      "pontos": 28,
+      "pontos": 31,
       "gols": 9,
       "assistencias": 15,
       "numero": 0,
@@ -78,8 +51,8 @@
       "id": 20,
       "nome": "Filipe Oliveira",
       "posicao": "Meia",
-      "pontos": 0,
-      "gols": 0,
+      "pontos": 3,
+      "gols": 2,
       "assistencias": 0,
       "numero": 0,
       "foto": "default.jpeg",
@@ -90,9 +63,9 @@
       "id": 9,
       "nome": "Gladimir",
       "posicao": "Zagueiro",
-      "pontos": 11,
+      "pontos": 14,
       "gols": 4,
-      "assistencias": 3,
+      "assistencias": 4,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -102,8 +75,8 @@
       "id": 10,
       "nome": "Guilherme",
       "posicao": "Atacante",
-      "pontos": 29,
-      "gols": 29,
+      "pontos": 32,
+      "gols": 30,
       "assistencias": 17,
       "numero": 0,
       "foto": "default.jpeg",
@@ -115,9 +88,9 @@
       "nome": "Jonas Bueno",
       "posicao": "Meia",
       "numero": 10,
-      "pontos": 45,
-      "gols": 28,
-      "assistencias": 24,
+      "pontos": 48,
+      "gols": 32,
+      "assistencias": 25,
       "foto": "jonas_bueno.jpeg",
       "titulos": 3,
       "nota": 9
@@ -126,9 +99,9 @@
       "id": 11,
       "nome": "Juninho",
       "posicao": "Atacante",
-      "pontos": 38,
-      "gols": 37,
-      "assistencias": 15,
+      "pontos": 41,
+      "gols": 38,
+      "assistencias": 17,
       "numero": 0,
       "foto": "default.jpeg",
       "titulos": 0,
@@ -162,7 +135,7 @@
       "id": 2,
       "nome": "Maiky William",
       "posicao": "Zagueiro",
-      "pontos": 21,
+      "pontos": 24,
       "numero": 29,
       "gols": 7,
       "assistencias": 6,
@@ -186,7 +159,7 @@
       "id": 15,
       "nome": "Piu Piu",
       "posicao": "Goleiro",
-      "pontos": 28,
+      "pontos": 31,
       "gols": 0,
       "assistencias": 0,
       "numero": 0,
@@ -211,7 +184,7 @@
       "nome": "Renato Goldani",
       "posicao": "Meia",
       "pontos": 33,
-      "gols": 13,
+      "gols": 14,
       "assistencias": 4,
       "numero": 0,
       "foto": "renato_goldani.jpg",
@@ -235,7 +208,7 @@
       "nome": "William Dorneles",
       "posicao": "Volante",
       "pontos": 13,
-      "gols": 3,
+      "gols": 4,
       "assistencias": 0,
       "numero": 0,
       "foto": "default.jpeg",
@@ -256,6 +229,21 @@
     }
   ],
   "jogos": [
+    {
+      "id": 11,
+      "data": "26/07/2025",
+      "titulo": "Festa Azul: 8 a 5 Eletrizante no Duelo Amador!",
+      "placar": "8 x 5",
+      "descricao": "<p><strong>Estância Velha, RS – 26 de julho de 2025</strong> – Em uma manhã de sábado que ficará marcada na memória dos apaixonados por futebol amador de Estância Velha, o <strong>time Azul</strong> protagonizou uma atuação de gala contra o <strong>time Vermelho</strong>, consolidando uma vitória espetacular por 8 a 5 em um jogo eletrizante que teve início às 10h. O campo, palco de intensas emoções, viu brilhar individualidades e a força do coletivo em um espetáculo digno dos gramados profissionais.</p><p>O primeiro tempo da partida foi um verdadeiro festival de gols e defesas milagrosas. O <strong>time Azul</strong> começou avassalador, e logo aos 6 minutos, <strong>Bueno</strong> abriu o placar, recebendo um passe açucarado de <strong>GLADIMIR</strong>, mostrando a que veio. Aos 10:35, Bueno ainda protagonizou uma \"caneta\" em Luiz Carlos, um lance de puro talento. A primeira etapa foi marcada por uma intensa trocação, com <strong>Maiky William</strong> mostrando sua força nos desarmes pelo time Azul, e os goleiros <strong>Piupiu</strong>&nbsp;e <strong>Daniel da Silva</strong>&nbsp;se desdobrando em defesas difíceis para manter suas equipes vivas no jogo.</p><p>A volta do intervalo trouxe consigo a promessa de ainda mais emoções, e a expectativa foi totalmente superada. O segundo tempo foi uma enxurrada de gols, e o <strong>time Azul</strong> mostrou sua superioridade. Destaque para a estrela da partida, <strong>Bueno</strong>, do time Azul, que não apenas marcou gols importantes, incluindo um aos 44:18 e outro aos 45:15, mas também ditou o ritmo do ataque azulino. <strong>Juninho</strong>, atacante do time Azul, também deixou sua marca com um gol crucial aos 40:28 e deu assistência para o gol de Bueno aos 42:03. <strong>Filipe Oliveira</strong>, com dois gols (32:39 e 31:16), e <strong>Guilherme Schweitzer</strong> (20:46), com assistência de Juninho, completaram a goleada azulina.</p><p>Pelo lado do <strong>time Vermelho</strong>, a equipe lutou bravamente. <strong>Jeferson</strong> marcou um gol aos 4:26, com assistência de Lucas. <strong>Willian Dorneles</strong> balançou as redes aos 18:15. <strong>Renato Goldani</strong> deixou sua marca aos 23:11, com passe de Lucas, e ainda deu assistência para o gol de Ramirez aos 27:14. <strong>Ramirez</strong> foi o autor do gol aos 27:14. <strong>Lucas</strong> também se destacou com desarmes e passes importantes, como o que resultou no gol de Jeferson. <strong>Rafael Nunes Schweitzer</strong> foi um muro na defesa do Vermelho, com desarmes cruciais ao longo da partida.</p><p>As defesas dos goleiros <strong>Piupiu</strong> (time Azul) e <strong>Daniel da Silva</strong> (time Vermelho) foram um capítulo à parte, garantindo lances de tirar o fôlego e mostrando a importância de ter um bom arqueiro.</p><p>Ao apito final, a comemoração do <strong>time Azul</strong> era compreensível. A vitória de 8 a 5 não foi apenas um placar expressivo, mas o resultado de uma atuação dominante construída com garra, talento e a união de um elenco que soube impor seu ritmo. O futebol amador de Estância Velha mais uma vez provou que tem paixão, técnica e histórias emocionantes para contar. Parabéns aos dois times pelo espetáculo!</p>",
+      "imagem_destaque": "jogo-26-07.jpeg",
+      "midias": [
+        {
+          "tipo": "imagem",
+          "url": "assets/imagens/jogo-26-07.jpeg"
+        }
+      ],
+      "temaVencedor": "azul"
+    },
     {
       "id": 10,
       "data": "19/07/2025",
@@ -349,5 +337,32 @@
       "midias": [],
       "temaVencedor": "azul"
     }
-  ]
+  ],
+   "timesSorteados": {
+    "azul": [],
+    "vermelho": []
+  },
+  "financeiro": {
+    "saldoAtual": 150.75,
+    "valorMensalidade": 50,
+    "historicoTransacoes": [
+      {
+        "id": 1,
+        "data": "2025-06-01",
+        "descricao": "Pagamento da mensalidade de Jonas Bueno",
+        "tipo": "entrada",
+        "valor": 50
+      },
+      {
+        "id": 2,
+        "data": "2025-06-05",
+        "descricao": "Aluguel da quadra",
+        "tipo": "saida",
+        "valor": 120
+      }
+    ],
+    "statusMensalidades": {
+      "1": "2025-06-01"
+    }
+  }
 }
